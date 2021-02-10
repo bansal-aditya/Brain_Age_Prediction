@@ -1,6 +1,6 @@
 from tensorflow.keras.models import load_model
 import pickle
-from plots import plot_loss, plot_validation_n_tes_prediction
+from Ploplots import plot_loss, plot_validation_n_tes_prediction
 import pandas as pd
 from constants import SCSE_GPU_DIRECTORY, DATA_FILE
 from sklearn.model_selection import train_test_split

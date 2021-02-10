@@ -86,8 +86,6 @@ def train():
         callbacks=[mc, early]
         )
 
-
-
     val_prediction = model.predict(
         dataGenerator([get_path(val.Loc.values), scanner_val, gender_val], val.Age.values, batch_size=1, meanImg=meanImg,
                       dim=DATA_SHAPE, shuffle=False, augment=False),

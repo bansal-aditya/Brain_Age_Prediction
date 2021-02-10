@@ -1,7 +1,7 @@
 import pickle
 from plots import plot_loss, plot_validation_n_tes_prediction, bar_graph
 import pandas as pd
-from constants import SCSE_GPU_DIRECTORY, DATA_FILE
+from constants import DATA_DIR, DATA_FILE
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from sklearn.metrics import r2_score, mean_absolute_error
@@ -57,4 +57,4 @@ def age_groups():
 
     bar_graph(labels, mean_squares)
 
-plot()
+age_groups()

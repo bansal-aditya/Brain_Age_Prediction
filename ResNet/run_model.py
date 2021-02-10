@@ -1,11 +1,11 @@
 from tensorflow.keras.models import load_model
-from DataLoader import dataGenerator
 from sklearn.model_selection import train_test_split
 import pickle
 import pandas as pd
 import numpy as np
 
-from .constants import SCSE_GPU_DIRECTORY, DATA_FILE
+from constants import DATA_DIR, DATA_FILE
+from .data_loader import dataGenerator
 
 
 DATA_SHAPE = (121, 145, 121)
@@ -16,11 +16,11 @@ IMAGE_TYPE = 'RawT1'
 
 
 imageType = 'RawT1'
-model = load_model('/export/home/aditya018/code/Results/BrainAgeResNet(RawT1-TrainedFor113Epochs)')
+model = load_model('/export/home/aditya018/old-code/Resnet/models/BrainAgeResNet(RawT1-Ice)')
 
 
 def get_paths(path):
-    return SCSE_GPU_DIRECTORY + path[path.rfind('/'):]
+    return DATA_DIR + path[path.rfind('/'):]
 get_path = np.vectorize(get_paths)
 
 
