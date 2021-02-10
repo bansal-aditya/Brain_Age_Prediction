@@ -1,0 +1,6 @@
+nibabel
+scipy
+pandas
+sklearn
+xlrd
+torchvision
