@@ -1,6 +1,6 @@
 # Brain Age Prediction
 
-Brain Age Predction from Brain MRI using Deep Learning
+Brain Age Prediction from Brain MRI using Deep Learning
 
 ## Models
 Resnet: Forked from https://github.com/benniatli/BrainAgePredictionResNet
