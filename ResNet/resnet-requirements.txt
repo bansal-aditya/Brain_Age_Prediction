@@ -1,7 +1,0 @@
-pandas
-sklearn
-matplotlib
-nibabel
-transformations
-pillow
-numpy
